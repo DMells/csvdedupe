@@ -6,7 +6,8 @@ import sys
 import locale
 import logging
 from io import StringIO, open
-from . import csvhelpers
+# from . import csvhelpers
+import csvhelpers
 import dedupe
 
 import itertools
