@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-import future
+# import future
 
 import logging
 import os
@@ -7,7 +7,7 @@ import sys
 import json
 from io import StringIO, open
 
-from . import csvhelpers
+from csvdedupe import csvhelpers
 import dedupe
 
 import itertools
