@@ -129,6 +129,10 @@ class CSVLink(csvhelpers.CSVCommand):
              nonexact_2,
              exact_pairs) = exact_matches(data_1, data_2, fields)
 
+            # training_file = '/Users/davidmellor/Code/Spend_Network/Data_Projects/Project_Cascade/Regions/UK_entities/Data_Inputs/Training_Files/Name_Only/Matching/matching_training.json'
+            # with open(training_file, 'rb') as f:
+            #     deduper.prepare_training(data_1, data_2,training_file=f)
+
             # Set up our data sample
             logging.info('taking a sample of %d possible pairs', self.sample_size)
             deduper.sample(nonexact_1, nonexact_2, self.sample_size)
